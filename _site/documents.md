@@ -3,10 +3,7 @@
 3D Slicer is an open source software platform for medical image informatics, image processing, and three-dimensional visualization. Built over two decades through support from the National Institutes of Health and a worldwide developer community, Slicer brings free, powerful cross-platform processing tools to physicians, researchers, and the general public.
 
 3D Slicer has a large user base and strong community support. It has a mature development and extension processes. Although most of users are in the radiological image related fields,such a large community would certainly be helpful to the computational pathology community. Slicer was originally designed for 3D and higherdimensional radiology images. Therefore it has more native support for 3D visualization and computing than other software designed from 2D image. Being a transnational research tool, rather than a commercially oriented software,such an infrastructure would be very beneficial for advancing multiplexing microscopy, 3D pathology, and even 3D+time dynamic microscopy. Based on these perspective needs, the3D Slicer fits very well as the infrastructure for a histopathology image computing platform that can accommodate both current needs and future applications.
-## About SlicerScope
-SlicerScope is an open platform for whole slide histopathology image computing based on the highly successful 3D Slicer. SlicerScope has three specific analytical modules for staining decomposition, nucleus segmentation, and gland segmentation of 2D/3D histopathology images. It's open-source, extendable, facilitating the algorithmic, clinical, and transnational researches.
 
-We open source the code of SlicerScope on GitHub for compilation and further development, and at the same time provide a compiled version. We welcome all consultations and suggestions on how to use SlicerScope. Please contact Dr. Gao Yi(gaoyicn@outlook.com).
 ## SlicerScope GUI
 ![Basic GUI of SlicerScope](./assets/initGUI.png)
 Following pathologists’ convention, mouse wheels as wellas the slide bar (in the module panel)can both be used for changing magnification  power in a continuous fashion.Internally, the images are formed by interpolation if theviewing magnification does not match with the resolutions stored in the hierarchical format of image pyramid.
@@ -31,7 +28,6 @@ The average Dice coefficients for all lung images  is 0.70 with standard deviati
 SlicerScope propose a patch-based U-net algorithm to extract the gland region. We used the training and testing images from the GLAS colon gland segmentation challenge. The average Dice coefficient is 0.910 and the standard deviation is 0.043. Contour colors: yellow(GT), cyan (algorithm).
 ![the slide at higher (10x) power](./assets/glasWhole.png)
 
-
 ## For 3D pathology
 One significant benefit of using 3D Slicer as the back-bone  structure for computational pathology lies in the fact that 3D Slicer was originally designed for three-and-higher dimensional image computing. This feature naturally fits the 3D pathology scenario. In situations such as confocal microscopic imaging of thecells, one may want to extract the 3D extent of each cells.SlicerScope can benefit from the richcontent of the existing modules from 3D Slicer.
 ![the slide at higher (10x) power](./assets/confocal1.png)
@@ -45,16 +41,16 @@ One significant benefit of using 3D Slicer as the back-bone  structure for compu
 # How to extand SlicerScope?
 Being one of the leading open-source medical image computing platforms, 3D Slicer not only ships abundant algorithms with it, it also has a well-established mechanismthat the user can extend  Slicer with their own algorithms. To serve such a purpose, Slicer  provides three channels:the command-line interface, the python script interface, andthe c++ loadable interface. One need to consider the characteristics of the whole slide images in order to pick thetype of interface.
 
-### Command Line Interface (CLI)
+## Command Line Interface (CLI)
 CLIs are standalone executables with a limited input/output arguments complexity (simple argument types, no user interactions...). They are typically implemented in C++ (using ITK). SlicerScope allow running (almost) any Python script as a CLI module by providing an interface description .xml file.
 
-### Loadable Modules(C++)
+## Loadable Modules(C++)
 Loadable modules are C++ plugins that are built against Slicer. They define custom GUIs for their specific behavior as they have full control over the application.
 
-### Scripted Modules(Python)
+## Scripted Modules(Python)
 Full access to the API: VTK, Qt, MRML and Slicer,SimpleITK are fully wrapped.
 
-### More Information
+# More Information
 - https://www.slicer.org/wiki/Documentation/Nightly/Developers/FAQ/Extensions#How_to_build_an_extension_.3F
 - https://www.slicer.org/wiki/Documentation/Nightly/Developers/Modules
 - https://www.slicer.org/wiki/Documentation/Nightly/Developers/ExtensionWizard

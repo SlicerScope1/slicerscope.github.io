@@ -69,10 +69,7 @@
 <p>3D Slicer is an open source software platform for medical image informatics, image processing, and three-dimensional visualization. Built over two decades through support from the National Institutes of Health and a worldwide developer community, Slicer brings free, powerful cross-platform processing tools to physicians, researchers, and the general public.</p>
 
 <p>3D Slicer has a large user base and strong community support. It has a mature development and extension processes. Although most of users are in the radiological image related fields,such a large community would certainly be helpful to the computational pathology community. Slicer was originally designed for 3D and higherdimensional radiology images. Therefore it has more native support for 3D visualization and computing than other software designed from 2D image. Being a transnational research tool, rather than a commercially oriented software,such an infrastructure would be very beneficial for advancing multiplexing microscopy, 3D pathology, and even 3D+time dynamic microscopy. Based on these perspective needs, the3D Slicer fits very well as the infrastructure for a histopathology image computing platform that can accommodate both current needs and future applications.</p>
-<h2 id="about-slicerscope">About SlicerScope</h2>
-<p>SlicerScope is an open platform for whole slide histopathology image computing based on the highly successful 3D Slicer. SlicerScope has three specific analytical modules for staining decomposition, nucleus segmentation, and gland segmentation of 2D/3D histopathology images. It’s open-source, extendable, facilitating the algorithmic, clinical, and transnational researches.</p>
 
-<p>We open source the code of SlicerScope on GitHub for compilation and further development, and at the same time provide a compiled version. We welcome all consultations and suggestions on how to use SlicerScope. Please contact Dr. Gao Yi(gaoyicn@outlook.com).</p>
 <h2 id="slicerscope-gui">SlicerScope GUI</h2>
 <p><img src="/assets/initGUI.png" alt="Basic GUI of SlicerScope" />
 Following pathologists’ convention, mouse wheels as wellas the slide bar (in the module panel)can both be used for changing magnification  power in a continuous fashion.Internally, the images are formed by interpolation if theviewing magnification does not match with the resolutions stored in the hierarchical format of image pyramid.
@@ -112,16 +109,16 @@ The whole panel can be divided into three sections. In the first section, the us
 <h1 id="how-to-extand-slicerscope">How to extand SlicerScope?</h1>
 <p>Being one of the leading open-source medical image computing platforms, 3D Slicer not only ships abundant algorithms with it, it also has a well-established mechanismthat the user can extend  Slicer with their own algorithms. To serve such a purpose, Slicer  provides three channels:the command-line interface, the python script interface, andthe c++ loadable interface. One need to consider the characteristics of the whole slide images in order to pick thetype of interface.</p>
 
-<h3 id="command-line-interface-cli">Command Line Interface (CLI)</h3>
+<h2 id="command-line-interface-cli">Command Line Interface (CLI)</h2>
 <p>CLIs are standalone executables with a limited input/output arguments complexity (simple argument types, no user interactions…). They are typically implemented in C++ (using ITK). SlicerScope allow running (almost) any Python script as a CLI module by providing an interface description .xml file.</p>
 
-<h3 id="loadable-modulesc">Loadable Modules(C++)</h3>
+<h2 id="loadable-modulesc">Loadable Modules(C++)</h2>
 <p>Loadable modules are C++ plugins that are built against Slicer. They define custom GUIs for their specific behavior as they have full control over the application.</p>
 
-<h3 id="scripted-modulespython">Scripted Modules(Python)</h3>
+<h2 id="scripted-modulespython">Scripted Modules(Python)</h2>
 <p>Full access to the API: VTK, Qt, MRML and Slicer,SimpleITK are fully wrapped.</p>
 
-<h3 id="more-information">More Information</h3>
+<h1 id="more-information">More Information</h1>
 <ul>
   <li>https://www.slicer.org/wiki/Documentation/Nightly/Developers/FAQ/Extensions#How_to_build_an_extension_.3F</li>
   <li>https://www.slicer.org/wiki/Documentation/Nightly/Developers/Modules</li>
