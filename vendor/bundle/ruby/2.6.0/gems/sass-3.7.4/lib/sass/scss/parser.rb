@@ -1182,7 +1182,7 @@ module Sass
       EXPR_NAMES = {
         :media_query => "media query (e.g. print, screen, print and screen)",
         :media_query_list => "media query (e.g. print, screen, print and screen)",
-        :media_expr => "media expression (e.g. (min-device-width: 800px))",
+        :media_expr => "media expression (e.g. (min-device-width: 1300px))",
         :at_root_query => "@at-root query (e.g. (without: media))",
         :at_root_directive_list => '* or identifier',
         :declaration_value => "expression (e.g. fr, 2n+1)",

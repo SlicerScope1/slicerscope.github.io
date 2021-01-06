@@ -1,5 +1,5 @@
 title: SlicerScope
-description: A 3D-Slicer based open platform for whole slide histopathology image computing.
+description: A 3D-Slicer based open platform for whole slide histopathology image computing
 email: gaoyicn@outlook.com
 
 theme: minima
@@ -22,3 +22,8 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+# exclude:
+#   - documents.html
+#   - download.html
+#   - index.html
