@@ -46,25 +46,25 @@ SlicerScope propose a patch-based U-net algorithm to extract the gland region. W
 One significant benefit of using 3D Slicer as the back-bone  structure for computational pathology lies in the fact that 3D Slicer was originally designed for three-and-higher dimensional image computing. This feature naturally fits the 3D pathology scenario. In situations such as confocal microscopic imaging of thecells, one may want to extract the 3D extent of each cells.SlicerScope can benefit from the richcontent of the existing modules from 3D Slicer.
 <img src="./assets/3d_pathology.png" width="700" height="200"   align="center" />
 
-# How to build SlicerScope from source code?
+## How to build SlicerScope from source code?
 - for [windows](https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/windows.html)
 - for [Linux](https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/linux.html)
 - for [mac OS](https://slicer.readthedocs.io/en/latest/developer_guide/build_instructions/macos.html)
 
 ***
-# How to extand SlicerScope?
+## How to extand SlicerScope?
 Being one of the leading open-source medical image computing platforms, 3D Slicer not only ships abundant algorithms with it, it also has a well-established mechanismthat the user can extend  Slicer with their own algorithms. To serve such a purpose, Slicer  provides three channels:the command-line interface, the python script interface, andthe c++ loadable interface. One need to consider the characteristics of the whole slide images in order to pick thetype of interface.
 
-## Command Line Interface (CLI)
+### Command Line Interface (CLI)
 CLIs are standalone executables with a limited input/output arguments complexity (simple argument types, no user interactions...). They are typically implemented in C++ (using ITK). SlicerScope allow running (almost) any Python script as a CLI module by providing an interface description .xml file.
 
-## Loadable Modules(C++)
+### Loadable Modules(C++)
 Loadable modules are C++ plugins that are built against Slicer. They define custom GUIs for their specific behavior as they have full control over the application.
 
-## Scripted Modules(Python)
+### Scripted Modules(Python)
 Full access to the API: VTK, Qt, MRML and Slicer,SimpleITK are fully wrapped.
 
-# More Information
+## More Information
 - https://www.slicer.org/wiki/Documentation/Nightly/Developers/FAQ/Extensions#How_to_build_an_extension_.3F
 - https://www.slicer.org/wiki/Documentation/Nightly/Developers/Modules
 - https://www.slicer.org/wiki/Documentation/Nightly/Developers/ExtensionWizard
