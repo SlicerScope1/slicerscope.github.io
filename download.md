@@ -1,9 +1,7 @@
 # Download
-# Download
 
+Welcome to download SlicerScope: [GitHub](https://github.com/SlicerScope/SlicerScope)
 We use third-party software to provide a compiled version of SlicerScope. If you need more download channels, please contact us.
-
-## [Baidu Netdisk](https://docs.google.com/presentation/d/1UnHVMHzl0wuVWtHwBTU4mD6oV06yAukcuDUOitYhRSw/edit#slide=id.gef0214f23_0_0)
 
 ## [Google Drive](https://docs.google.com/presentation/d/1UnHVMHzl0wuVWtHwBTU4mD6oV06yAukcuDUOitYhRSw/edit#slide=id.gef0214f23_0_0)
 
