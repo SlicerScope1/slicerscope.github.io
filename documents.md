@@ -1,10 +1,12 @@
 # Documents
 
-## About [3D Slicer](https://www.slicer.org/)
+## [3D Slicer](https://www.slicer.org/) and SlicerScope
 3D Slicer is an open source software platform for medical image informatics, image processing, and three-dimensional visualization. Built over two decades through support from the National Institutes of Health and a worldwide developer community, Slicer brings free, powerful cross-platform processing tools to physicians, researchers, and the general public.
 
 3D Slicer has a large user base and strong community support. It has a mature development and extension processes. Although most of users are in the radiological image related fields,such a large community would certainly be helpful to the computational pathology community. Slicer was originally designed for 3D and higherdimensional radiology images. Therefore it has more native support for 3D visualization and computing than other software designed from 2D image. Being a transnational research tool, rather than a commercially oriented software,such an infrastructure would be very beneficial for advancing multiplexing microscopy, 3D pathology, and even 3D+time dynamic microscopy. Based on these perspective needs, the3D Slicer fits very well as the infrastructure for a histopathology image computing platform that can accommodate both current needs and future applications.
-***
+
+However, all its successful medical applications are in the radiology image fields where the entire image can be directly loaded into the memory. With the present work of SlicerScope, we extend the Slicer into this new field of computational pathology, and we believe that both the computational pathology and Slicer community would benefit from such an synergistic software.
+
 ## SlicerScope GUI
 <img src="./assets/initGUI.png" width="800" height="500"   align="center" />
 <!-- ![Basic GUI of SlicerScope](./assets/initGUI.png) -->
