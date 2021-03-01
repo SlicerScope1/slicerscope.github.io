@@ -12,4 +12,12 @@ SlicerScope is an open platform for whole slide histopathology image computing b
 
 ***
 # Contact us
-If you encounter any problem, please email <a href="mailto:gaoyicn@outlook.com">gaoyicn@outlook.com</a>
+If you encounter any problem, please contact:
+
+Yi Gao, PhD
+
+Professor of Biomedical Engineering
+
+Shenzhen University
+
+gaoyicn@outlook.com
